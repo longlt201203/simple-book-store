@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  db:
+    container_name: sbs_db
+    image: mysql:8.0
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: Admin@123
+      MYSQL_DATABASE: simple_book_store
+    volumes:
+      - sbs_db_vol:/var/lib/mysql
+
+volumes:
+  sbs_db_vol:
