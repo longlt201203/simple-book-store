@@ -35,4 +35,4 @@ export const DbConstants = {
 			id: "n4BorrowItemID",
 		},
 	},
-};
+} as const;

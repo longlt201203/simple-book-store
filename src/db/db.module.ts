@@ -6,6 +6,7 @@ import { Env } from "@utils";
 
 @Module({
 	imports: [
+		TypeOrmModule.forRoot(datasource.options),
 		KnexModule.regsiter({
 			client: "mysql2",
 			connection: {
